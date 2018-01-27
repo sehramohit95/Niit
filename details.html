@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+
+ <script>
+ 
+    function show(){
+	
+	   var pid=document.getElementById("pid").value;
+	   var pname=document.getElementById("pname").value;
+	   var pp=document.getElementById("pp").value;
+	   var pq=document.getElementById("pq").value;
+	   
+	   alert(pid+" "+pname+" "+pp+" "+pq);
+	 
+	}
+ 
+ </script>
+
+</head>
+
+<body>
+
+<form onsubmit="show()">
+
+<table>
+
+<tr>
+<td>ProductID:</td>
+<td><input id="pid"type="text" name="pid"/></td>
+</tr>
+
+<tr>
+<td>ProductName:</td>
+<td><input id="pname" type="text" name="pname"/></td>
+</tr>
+
+<tr>
+<td>ProductPrice:</td>
+<td><input id="pp" type="text" name="pp"/></td>
+</tr>
+
+<tr>
+<td>ProductQuantity:</td>
+<td><input id="pq" type="text" name="pq"/></td>
+</tr>
+
+<tr>
+
+<td><input  type="submit" /></td>
+</tr>
+</table>
+
+</form>
+</body>
+
+</html> 

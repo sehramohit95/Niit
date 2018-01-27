@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+<script src="jquery-3.2.1.min.js" ></script>
+
+<script>
+
+ $(document).ready(function(){
+ 
+    $("button").click(function(){
+	
+	  $("img").width("200px");
+	  $("#div1").width("200px");
+	  $("#div1").css("marginLeft","210px");
+	});
+ 
+ });
+
+</script>
+<style>
+ 
+ #div1{
+
+   margin-left:120px;
+   height:100px;
+   width:100px;
+   border:1px solid black;
+   padding-left:2px;
+   padding-top:0px;
+   padding-bottom:2px;
+ }
+
+</style>
+</head>
+
+<body>
+
+<div>
+ 
+  <img src="C:/Users/DELL/Desktop/NIIT/index.jpg" alt="Couldn't load" style="float:left;" height="100" width="100" >
+  
+  <div id="div1">
+  
+    <p>Animal:Dog</p>
+	<p>Age:5 yrs</p>
+	<p>Color:White</p>
+  </div>
+  <br>
+ <button>Expand</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!Doctype html>
+<html>
+
+<head>
+
+<script src="jquery-3.2.1.min.js"></script>
+
+<script>
+
+  $(document).ready(function(){
+  
+     $("#tv").click(function(){
+	 
+	    $("#typeTv").toggle();
+	 });
+	 
+	 $("#cam").click(function(){
+	 
+	   $("#typeCam").toggle();
+	 });
+  
+     $("#ac").click(function(){
+	 
+	    $("#typeAc").toggle();  
+	 });
+  });
+</script>
+
+<style>
+
+  div{
+  
+    width:200px;
+	height:300px;
+	border:1px solid black;
+  }
+  
+  li{
+  
+   background:gray;
+   margin:3px;
+   margin-left:-20px;
+   padding:2px;
+  }
+</style>
+</head>
+
+<body>
+
+<div >
+ 
+   <ul>
+   
+     <li id="tv" > TV 
+	     
+	    <ul id="typeTv" style="display:none;">
+		  <li>LED</li>
+		  <li>LCD</li>
+		</ul>
+	
+	 </li>
+	<li id="cam" > Camera
+
+       <ul id="typeCam" style="display:none;">
+	      <li>DigiCam</li>
+		  <li>DSLR</li>
+	   </ul>	
+    </li>
+	
+     <li id="ac" >AC
+	 
+	   <ul id="typeAc" style="display:none;">
+	       
+		   <li>Split</li>
+		   <li>Window</li>
+	   </ul>
+     </li>
+	 
+   </ul>
+</div>
+
+</body>
+</html>

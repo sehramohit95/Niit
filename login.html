@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+  
+ <script>
+ 
+    function validate(){
+	
+	  var user=document.getElementById("user").value;
+	  var passwd=document.getElementById("passwd").value;
+	  
+	  if(user!="mohit" || passwd!="mohit"){
+	  
+	      alert("wrong values");
+		  return false;
+	  }
+	   
+	}
+ 
+ </script>
+
+</head>
+
+<body>
+
+<form action="details.html" method="post" onsubmit="return validate()">
+<table>
+<tr>
+<td>Username:</td>
+<td><input id="user" type="text" name="user"/></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input id="passwd" type="password" name="passwd"/></td>
+</tr>
+
+<tr><td><input type="submit" />
+</table>
+
+</form>
+</body>
+</html>
